@@ -1,0 +1,56 @@
+research_task:
+  description: >
+    Analyze the job posting URL provided ({job_posting_url})
+    to extract key skills, experiences, and qualifications
+    required. Use the tools to gather content and identify
+    and categorize the requirements.
+  expected_output: >
+    A structured list of job requirements, including necessary
+    skills, qualifications, and experiences.
+  agent: researcher
+  async_execution: False
+
+profile_task:
+  description: >
+    Compile a detailed personal and professional profile 
+    using the GitHub ({github_url}) URLs, and personal write-up
+    ({personal_writeup}). Utilize tools to extract and
+    synthesize information from these sources.
+  expected_output: >
+    A comprehensive profile document that includes skills,
+    project experiences, contributions, interests, and communication style.
+  agent: profiler
+  async_execution: False
+  
+cover_letter_strategy_task:
+  description: >
+    Using the profile and job requirements obtained from previous tasks,
+    tailor one page cover letter to highlight the most relevant areas. Employ tools to adjust
+    and enhance the cover letter content. Make sure this is the best cover letter even but
+    don't make up any information. Make sure the cover letter highlights
+    the experience related to job posting and it shows the candidate ability
+    to perform the job responsibilities efficiently. All to better reflrect the candidates
+    abilities and how it matches the job posting.
+  expected_output: >
+    One page cover letter that effectively highlights the candidate's
+    qualifications and experiences relevant to the job.
+  agent: cover_letter_strategist
+  markdown: true
+  output_file: tailored_cover_letter.md
+  context: [research_task, profile_task]
+  
+interview_preparation_task:
+  description: >
+    Create a set of potential interview questions and talking
+    points based on the tailored cover letter, resume and job requirements
+    Utilize tools to generate relevant questions and discussion
+    points. Make sure to use these question and talking points to
+    help the candiadte highlight the main points of the resume
+    and how it matches the job posting.
+  expected_output: >
+    A document containing key questions and talking points
+    that the candidate should prepare for the initial interview.
+  agent: interview_preparer
+  markdown: true
+  output_file: interview_materials.md
+  context: [research_task, profile_task, cover_letter_strategy_task]

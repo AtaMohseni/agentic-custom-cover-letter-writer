@@ -1,0 +1,23 @@
+[project]
+name = "cover_letter_writer"
+version = "0.1.0"
+description = "cover-letter-writer using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.100.1,<1.0.0"
+]
+
+[project.scripts]
+cover_letter_writer = "cover_letter_writer.main:run"
+run_crew = "cover_letter_writer.main:run"
+train = "cover_letter_writer.main:train"
+replay = "cover_letter_writer.main:replay"
+test = "cover_letter_writer.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

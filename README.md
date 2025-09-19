@@ -1,6 +1,6 @@
 # CoverLetterWriter Crew
 
-Welcome to the CoverLetterWriter Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities. The multi-agent coverletter writer system uses your resume (in markdown format), list of project or portfolio (i.e. github url) and the job posting url to write one page of custom coverletter.  
+Welcome to the CoverLetterWriter Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities. The multi-agents coverletter writer crew uses your resume (in markdown format), list of projects or portfolio (i.e. github url) and the job posting url to write one page of custom coverletter for that specific position. 
 
 ## Installation
 

@@ -20,7 +20,7 @@ crewai install
 ```
 ### Customizing
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+**Add your `OPENAI_API_KEY` and `SERPER_API_KEY` into the `.env` file**
 
 - Modify `src/cover_letter_writer/config/agents.yaml` to define your agents
 - Modify `src/cover_letter_writer/config/tasks.yaml` to define your tasks
@@ -37,7 +37,7 @@ $ crewai run
 
 This command initializes the cover-letter-writer Crew, assembling the agents and assigning them tasks as defined in your configuration.
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+This example will run the create a `tailored_cover_letter.md` file with the output that includes custom cover letter.
 
 ## Understanding Your Crew
 

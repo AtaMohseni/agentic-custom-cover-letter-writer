@@ -41,7 +41,7 @@ This example will run the create a `tailored_cover_letter.md` file with the outp
 
 ## Understanding Your Crew
 
-The cover-letter-writer Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+The cover-letter-writer Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew. Before running the crew for your own usecase, you need to modify the `fake_resume.md` and include your own information. Also, you need to modify the crew input in `src/cover_letter_writer/main.py` and include your desired job posting url, your github url, and short description about yourserlf.
 
 ## Support
 

@@ -1,5 +1,5 @@
 ```
-# Adam Mohseni
+# Adam 
 - Email: Adam@gmail.com
 - Phone: +44 11 111 11111
 
@@ -18,5 +18,5 @@ My continued pursuit for learning and innovation in the Artificial Intelligence 
 Thank you for considering my application. I am looking forward to discussing how my passion for AI and industry experience could be a valuable addition to your team.
 
 Sincerely,
-Adam Mohseni
+Adam 
 ```

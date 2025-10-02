@@ -28,7 +28,7 @@ class CoverLetterWriter():
 
     @agent
     def profiler(self) -> Agent:
-        resume_path = './fake_resume.md'
+        resume_path = './sample_resume.md'
         return Agent(
             config=self.agents_config['profiler'],
             tools = [ScrapeWebsiteTool(), SerperDevTool(),FileReadTool(file_path=resume_path), MDXSearchTool(mdx=resume_path)],
@@ -36,7 +36,7 @@ class CoverLetterWriter():
         )
     @agent
     def cover_letter_strategist(self) -> Agent:
-        resume_path = './fake_resume.md'
+        resume_path = './sample_resume.md'
         return Agent(
             config=self.agents_config['cover_letter_strategist'],
             tools = [ScrapeWebsiteTool(), SerperDevTool(),FileReadTool(file_path=resume_path), MDXSearchTool(mdx=resume_path)],
@@ -44,7 +44,7 @@ class CoverLetterWriter():
         )
     @agent
     def interview_preparer(self) -> Agent:
-        resume_path = './fake_resume.md'
+        resume_path = './sample_resume.md'
         return Agent(
             config=self.agents_config['interview_preparer'],
             tools = [ScrapeWebsiteTool(), SerperDevTool(),FileReadTool(file_path=resume_path), MDXSearchTool(mdx=resume_path)],
